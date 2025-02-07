@@ -1,5 +1,7 @@
 # RADXA3W_CONFIG
 
+Configuration step-by-step guide for RADXA ZERO 3W to start all the services automatically while maintaining password in ssh service.
+
 **Download and etch the Debian image on the SD**
 
 1. Download the image at: https://github.com/radxa-build/radxa-zero3/releases/download/b6/radxa-zero3_debian_bullseye_xfce_b6.img.xz
@@ -8,7 +10,7 @@
 
 **Enable auto-login while keeping ssh with password**
 
-- In GUI:
+1. In GUI:
 
 ```
 sudo nano /etc/lightdm/lightdm.conf
@@ -27,7 +29,7 @@ Restart the lightdm system
 sudo systemctl restart lightdm
 ```
 
-- In Terminal
+2. In Terminal
   
 ```
 sudo mkdir -p /etc/systemd/system/getty@tty1.service.d/
