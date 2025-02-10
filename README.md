@@ -26,6 +26,11 @@ Configuration step-by-step guide for RADXA ZERO 3W to start all the services aut
 - Username: radxa
 - Password: radxa
 
+**2.1. Change keyboard layout**
+
+ ```
+sudo loadkeys es
+```
 
 **3. Configure WiFi**
 - Via GUI
