@@ -26,13 +26,9 @@ Configuration step-by-step guide for RADXA ZERO 3W to start all the services aut
 - Username: radxa
 - Password: radxa
 
-**2.1. Change keyboard layout**
-
- ```
-sudo loadkeys es
-```
 
 **3. Configure WiFi**
+
 - Via GUI
 
   Go to the logo in the upwards right part of the screeen
@@ -55,99 +51,23 @@ ip a
 
 **5. Connect via ssh**
 
-**5.1. Change username or password (Optional)**
-
-- Username (change newuser to your prefered name)
-  - Create a admin user (change password admin to your prefered)
+**5.1. Create username (Optional)**
+By default the existing ones are *radxa* and *rock*
     
 ```
-sudo adduser admnin
-sudo passwd admin
+sudo adduser changeme
 ```
   - Logout from *radxa*
-  - Login into *admin*
-  - Change the name of the *radxa* user
+  - Login into *changeme*
+  - Make chengeme sudoer
 ```
-sudo usermod -l newuser -d /home/newuser -m RADXA
-sudo groupmod -n newuser RADXA
-```
-
-- Password
-  
-```
-sudo passwd username
+sss
 ```
 
-- if admin is not needed:
-
-In newuser loggedout form admin
 ```
 sudo deluser tempuser
 sudo rm -rf /home/tempuser
 ```
-
-
-**Enable auto-login while keeping ssh with password**
-
-1. In GUI:
-
-```
-sudo nano /etc/lightdm/lightdm.conf
-```
-
-Find and uncomment:
-
-```
-[Seat:*]
-autologin-user=rock
-autologin-user-timeout=0
-```
-Restart the lightdm system
-
-```
-sudo systemctl restart lightdm
-```
-
-2. In Terminal
-  
-```
-sudo mkdir -p /etc/systemd/system/getty@tty1.service.d/
-sudo nano /etc/systemd/system/getty@tty1.service.d/autologin.conf
-```
-
-Add (changing username by your username, e.g. radxa if default):
-
-```
-[Service]
-ExecStart=
-ExecStart=-/sbin/agetty --autologin username --noclear %I $TERM
-```
-
-Reboot the service:
-
-```
-sudo systemctl daemon-reexec
-sudo systemctl restart getty@tty1
-```
-
-- ssh
-
-```
-sudo nano /etc/ssh/sshd_config
-```
-Change to:
-
-```
-PasswordAuthentication yes
-PermitRootLogin no
-PubkeyAuthentication yes
-```
-And restart the service:
-
-```
-sudo systemctl restart ssh
-```
-
 
 ----------
 
