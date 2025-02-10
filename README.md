@@ -8,6 +8,15 @@ Configuration step-by-step guide for RADXA ZERO 3W to start all the services aut
 
 2. Follow the  tutorial at: https://docs.radxa.com/en/zero/zero3/getting-started/install-os
 
+**Configure WiFi**
+- Via GUI
+- Via Terminal:
+
+```
+nmcli dev wifi connect "your_SSID" password "your_password"
+```
+
+
 **Enable auto-login while keeping ssh with password**
 
 1. In GUI:
@@ -52,6 +61,23 @@ sudo systemctl restart getty@tty1
 ```
 
 - ssh
+
+```
+sudo nano /etc/ssh/sshd_config
+```
+Change to:
+
+```
+PasswordAuthentication yes
+PermitRootLogin no
+PubkeyAuthentication yes
+```
+And restart the service:
+
+```
+sudo systemctl restart ssh
+```
+
 
 ----------
 
