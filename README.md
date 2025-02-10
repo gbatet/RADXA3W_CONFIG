@@ -23,27 +23,9 @@ Configuration step-by-step guide for RADXA ZERO 3W to start all the services aut
 ## On RADXA ZERO 3 with keyboard, screen and mouse
 
 **2. Login**
-- Username: RADXA
-- Password: RADXA
-  
-**2.1. Change username or password (Optional)**
+- Username: radxa
+- Password: radxa
 
-- Username (change newuser to your prefered name)
-```
-sudo usermod -l newuser -d /home/newuser -m RADXA
-sudo groupmod -n newuser RADXA
-```
-Now change your display name:
-
-```
-sudo chfn -f "New User Name" newuser
-```
-
-- Password
-  
-```
-sudo passwd username
-```
 
 **3. Configure WiFi**
 - Via GUI
@@ -58,8 +40,46 @@ nmcli dev wifi connect "your_SSID" password "your_password"
 
 Find your IP address:
 
+```
+ip a
+```
 
+**4. Logout**
 
+## On LAN PC
+
+**5. Connect via ssh**
+
+**5.1. Change username or password (Optional)**
+
+- Username (change newuser to your prefered name)
+  - Create a admin user (change password admin to your prefered)
+    
+```
+sudo adduser admnin
+sudo passwd admin
+```
+  - Logout from *radxa*
+  - Login into *admin*
+  - Change the name of the *radxa* user
+```
+sudo usermod -l newuser -d /home/newuser -m RADXA
+sudo groupmod -n newuser RADXA
+```
+
+- Password
+  
+```
+sudo passwd username
+```
+
+- if admin is not needed:
+
+In newuser loggedout form admin
+```
+sudo deluser tempuser
+sudo rm -rf /home/tempuser
+```
 
 
 **Enable auto-login while keeping ssh with password**
