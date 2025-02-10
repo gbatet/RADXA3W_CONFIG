@@ -60,13 +60,14 @@ sudo adduser changeme
   - Logout from *radxa*
   - Login into *changeme*
   - Make chengeme sudoer
+    
 ```
-sss
+sudo usermod -aG sudo changeme
 ```
 
 ```
-sudo deluser tempuser
-sudo rm -rf /home/tempuser
+sudo deluser radxa
+sudo rm -rf /home/radxa
 ```
 
 ----------
