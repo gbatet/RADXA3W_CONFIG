@@ -1,12 +1,5 @@
 # UBUNTU SERVER CONFIG
 
-**3. Config wifi**
-
-
-- reboot
-
-**DO NOT EVER UPGRADE DEBIAN, THIS WILL CAUSE ISSUES WITH WIRELESS CONNECTIONS**
-
 ------
 
 ## On your PC
