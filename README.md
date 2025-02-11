@@ -1,8 +1,18 @@
-# RADXA3W_CONFIG
+# RADXA ZERO 3W CONFIG
 
 INITIAL configuration step-by-step guide for RADXA ZERO 3W.
 
 --------
+## Materials:
+- RADXA ZERO 3W
+- USB C HUB
+- HDMI to mini HDMI
+- Peripherals:
+  - Screen
+  - Mouse
+  - Keyboard
+
+## Optional steps in every OS
 
 **O.1. Migrate OS from SD to eMMC**
 - Confirm the name of the eMMC:
