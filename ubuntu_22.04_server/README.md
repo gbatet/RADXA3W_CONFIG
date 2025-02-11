@@ -6,7 +6,7 @@
 
 **1. Download and etch the Debian image on the SD**
 
-1. Download the image at: [https://github.com/radxa-build/radxa-zero3/releases/download/b6/radxa-zero3_debian_bullseye_xfce_b6.img.xz](https://github.com/Joshua-Riek/ubuntu-rockchip/actions/runs/13252925923/artifacts/2569189508)
+1. Download the image at: [link-image](https://github.com/Joshua-Riek/ubuntu-rockchip/actions/runs/13252925923/artifacts/2569189508)
 
 2. Follow the  tutorial at: https://docs.radxa.com/en/zero/zero3/getting-started/install-os
 
