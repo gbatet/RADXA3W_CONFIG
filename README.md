@@ -12,6 +12,8 @@ INITIAL configuration step-by-step guide for RADXA ZERO 3W.
   - Mouse
   - Keyboard
 
+## Choose the OS folder and follow the README.md
+
 ## Optional steps in every OS
 
 **O.1. Migrate OS from SD to eMMC**
