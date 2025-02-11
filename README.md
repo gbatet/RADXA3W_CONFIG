@@ -2,6 +2,8 @@
 
 INITIAL configuration step-by-step guide for RADXA ZERO 3W.
 
+**DO NOT EVER UPGRADE DEBIAN, THIS WILL CAUSE ISSUES WITH WIRELESS CONNECTIONS"
+
 ------
 ## Materials:
 - RADXA ZERO 3W
@@ -28,14 +30,10 @@ INITIAL configuration step-by-step guide for RADXA ZERO 3W.
 
 
 **3. Configure WiFi**
-
-- Via GUI
-
-  Go to the logo in the upwards right part of the screeen
   
-- Via Terminal:
 
 ```
+sudo su
 nmcli dev wifi connect "your_SSID" password "your_password"
 ```
 
@@ -64,6 +62,10 @@ scp C:\Users\user\...\radxa-zero3_debian_bullseye_xfce_b6\radxa-zero3_debian_bul
 - Flash the image
 ```
 sudo dd if=/home/username/image.img of=/dev/mmcblk0 bs=4M status=progress
+```
+Once flashed and booted from OS, repeat the 1-4 steps and enable SSH:
+```
+sudo systemctl enable --now ssh
 ```
 
 **O.2. Create username**
