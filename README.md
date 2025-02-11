@@ -78,18 +78,20 @@ By default the existing ones are *radxa* and *rock*
 ```
 sudo adduser changeme
 ```
-  - Logout from *radxa*
-  - Login into *changeme*
+
   - Make chengeme sudoer
     
 ```
 sudo usermod -aG sudo changeme
 ```
+  - Logout from *radxa*
+  - Login into *changeme*
 
 ```
 sudo deluser radxa
 sudo rm -rf /home/radxa
 ```
+Repeat for user rock if wanted
 
 ----------
 
