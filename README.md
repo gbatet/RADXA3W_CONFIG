@@ -33,10 +33,6 @@ scp C:\Users\user\...\radxa-zero3_debian_bullseye_xfce_b6\radxa-zero3_debian_bul
 ```
 sudo dd if=/home/username/image.img of=/dev/mmcblk0 bs=4M status=progress
 ```
-Once flashed and booted from OS, repeat the 1-4 steps and enable SSH:
-```
-sudo systemctl enable --now ssh
-```
 
 **O.2. Create username**
     
