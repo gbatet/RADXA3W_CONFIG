@@ -3,14 +3,6 @@
 **DO NOT EVER UPGRADE DEBIAN, THIS WILL CAUSE ISSUES WITH WIRELESS CONNECTIONS**
 
 ------
-## Materials:
-- RADXA ZERO 3W
-- USB C HUB
-- HDMI to mini HDMI
-- Peripherals:
-  - Screen
-  - Mouse
-  - Keyboard
 
 ## On your PC
 
