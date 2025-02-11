@@ -24,6 +24,17 @@ sudo wpa_passphrase "YourSSID" "YourPassword" | sudo tee /etc/wpa_supplicant/wpa
 sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
 sudo dhclient wlan0
 ```
+- update and upgrade
+- reboot
+- Repeat connection wpa...
+- Install network-manager
+
+```
+sudo apt install network-manager
+```
+- Update and upgrade
+- Reboot
+
 
 Find your IP address:
 
