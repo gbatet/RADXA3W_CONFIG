@@ -54,7 +54,10 @@ ip a
 ```
 lsblk
 ```
-- Unmount and format the eMMC
+- Format the eMMC
+```
+sudo mkfs.ext4 /dev/mmcblk0
+```
 - Copy the files from your PC to the RADXA ZERO 3
 ```
 scp C:\Users\user\...\radxa-zero3_debian_bullseye_xfce_b6\radxa-zero3_debian_bullseye_xfce_b6.img username@192.168.xxx.xxx:/home/username/
