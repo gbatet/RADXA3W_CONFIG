@@ -32,9 +32,12 @@ sudo dhclient wlan0
 ```
 sudo apt install network-manager
 ```
-- Update and upgrade
+- Update and Upgrade
 - Reboot
-
+- Connect via NMCLI
+```
+sudo nmcli dev wifi connect "Your_SSID" password "YourPassword"
+```
 
 Find your IP address:
 
