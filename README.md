@@ -49,6 +49,7 @@ sudo usermod -aG sudo changeme
 ```
   - Logout from *radxa*
   - Login into *changeme*
+  - Delate a user if needed
 
 ```
 sudo deluser radxa
