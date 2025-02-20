@@ -1,10 +1,23 @@
+# ARMBIAN LITE/IOT DEBIAN BOOKWORK config
 
-**Versió**
+------
 
-- https://dl.armbian.com/radxa-zero3/Bookworm_vendor_minimal
+## On your PC
+
+**1. Download and etch the Debian image on the SD**
+
+1. Download the image at: https://dl.armbian.com/radxa-zero3/Bookworm_vendor_minimal
+
+2. Follow the  tutorial at: https://docs.radxa.com/en/zero/zero3/getting-started/install-os
+
+## On RADXA ZERO 3 with keyboard, screen and mouse
+
+**2. Configure**
 
 
-**Network**
-- https://docs.armbian.com/User-Guide_Networking/
+**3. Configure WiFi**
+
+ - https://docs.armbian.com/User-Guide_Networking/
+
 
 
