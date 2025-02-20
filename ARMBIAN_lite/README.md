@@ -12,8 +12,7 @@
 
 ## On RADXA ZERO 3 with keyboard, screen and mouse
 
-**2. Configure**
-
+**2. Configure step by step**
 
 **3. Configure WiFi**
 
